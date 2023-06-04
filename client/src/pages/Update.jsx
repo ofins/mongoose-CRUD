@@ -17,7 +17,7 @@ const Update = () => {
         try {
             console.log(teams)
             navigate('/')
-            const res = await axios.put("http://localhost:5000/teams/" +id, teams)
+            const res = await axios.put("https://react-crud-5j5i.onrender.com/teams/" +id, teams)
         } catch (error) {
 
         }

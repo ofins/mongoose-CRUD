@@ -26,7 +26,7 @@ const Add = () => {
         e.preventDefault()
         try {
             navigate("/");
-            const res = await axios.post("http://localhost:5000/teams", teams)
+            const res = await axios.post("https://react-crud-5j5i.onrender.com/teams", teams)
         } catch (error) {
             console.log(error)
         }

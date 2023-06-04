@@ -12,7 +12,7 @@ const Teams = () => {
     useEffect(() => {
         const fetchAllTeams = async () => {
           try {
-            const res = await axios.get("http://localhost:5000/teams")
+            const res = await axios.get("https://react-crud-5j5i.onrender.com/teams")
             setTeams(res.data)
             console.log('run')
           } catch (error) {
@@ -24,7 +24,7 @@ const Teams = () => {
 
     const handleDelete = async (id) => {
         try {
-            const res = await axios.delete("http://localhost:5000/teams/"+id)
+            const res = await axios.delete("https://react-crud-5j5i.onrender.com/teams/"+id)
             window.location.reload()
         } catch (error) {
             console.log(error)
